@@ -1,0 +1,2 @@
+mainMod = "ALT"
+terminal = "kitty"
