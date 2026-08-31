@@ -6,7 +6,7 @@ install_tools() {
         git curl neovim btop nitch zoxide jq
         xh fd fzf tmux lazygit less
         nvibrant-bin nautilus yazi zen-browser-bin obsidian automake ripgrep eza unzip
-        noto-fonts-emoji incy-bin neovide ttf-jetbrains-mono-nerd fish starship
+        noto-fonts-emoji v2rayn neovide ttf-jetbrains-mono-nerd fish starship
     )
 
     echo "Installing additional tools..."
