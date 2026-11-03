@@ -2,8 +2,8 @@ local mainMod = _G.mainMod or "ALT"
 local terminal = _G.terminal or "kitty"
 
 hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
--- hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
--- hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
+hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Move focus (Vim keys)
 hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "l" }))

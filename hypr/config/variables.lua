@@ -1,2 +1,2 @@
 mainMod = "ALT"
-terminal = "kitty"
+terminal = "warp-terminal"
