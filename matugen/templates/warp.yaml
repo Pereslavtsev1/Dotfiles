@@ -1,0 +1,26 @@
+name: Matugen
+accent: "{{colors.primary.default.hex}}"
+cursor: "{{colors.primary.default.hex}}"
+background: "{{colors.surface.default.hex}}"
+foreground: "{{colors.on_surface.default.hex}}"
+details: darker
+
+terminal_colors:
+  normal:
+    black: "{{colors.surface_container_lowest.default.hex}}"
+    red: "{{colors.error.default.hex}}"
+    green: "{{colors.primary.default.hex}}"
+    yellow: "{{colors.tertiary.default.hex}}"
+    blue: "{{colors.secondary.default.hex}}"
+    magenta: "{{colors.tertiary.default.hex}}"
+    cyan: "{{colors.secondary.default.hex}}"
+    white: "{{colors.on_surface.default.hex}}"
+  bright:
+    black: "{{colors.surface_container_high.default.hex}}"
+    red: "{{colors.error.default.hex}}"
+    green: "{{colors.primary.default.hex}}"
+    yellow: "{{colors.tertiary.default.hex}}"
+    blue: "{{colors.secondary.default.hex}}"
+    magenta: "{{colors.tertiary.default.hex}}"
+    cyan: "{{colors.secondary.default.hex}}"
+    white: "{{colors.on_surface.default.hex}}"

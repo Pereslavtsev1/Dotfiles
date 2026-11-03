@@ -1,11 +1,11 @@
-[config]
-reload_apps = false
+[templates.btop]
+input_path = "~/.config/matugen/templates/btop.theme"
+output_path = "~/.config/btop/themes/matugen.theme"
 
-[templates.neovim]
+[templates.warp]
+input_path = "~/.config/matugen/templates/warp.yaml"
+output_path = "~/.local/share/warp-terminal/themes/matugen.yaml"
+
+[templates.nvim]
 input_path = "~/.config/matugen/templates/nvim-colors.lua.template"
 output_path = "~/.config/nvim/matugen_colors.lua"
-
-[templates.btop]
-input_path = '~/.config/matugen/templates/btop.theme'
-output_path = '~/.config/btop/themes/matugen.theme'
-post_hook = 'pkill -USR2 btop || true'
