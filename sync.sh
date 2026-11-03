@@ -49,6 +49,26 @@ if [ -f "$DOTFILES_DIR/starship.toml" ]; then
     ln -sfn "$DOTFILES_DIR/starship.toml" "$CONFIG_DIR/starship.toml"
 fi
 
+# Matugen
+MATUGEN_BASE_CONFIG="$HOME/.local/share/serpantinum/src/assets/matugen/config.toml"
+MATUGEN_EXTRA_CONFIG="$HOME/.config/matugen/config.toml"
+MATUGEN_OUTPUT_CONFIG="$HOME/.local/share/serpantinum/src/assets/matugen/config.toml"
+
+if [[ ! -f "$MATUGEN_BASE_CONFIG" ]]; then
+    echo "Matugen base config not found: $MATUGEN_BASE_CONFIG"
+elif [[ ! -f "$MATUGEN_EXTRA_CONFIG" ]]; then
+    echo "Matugen extra config not found: $MATUGEN_EXTRA_CONFIG"
+else
+    cp "$MATUGEN_OUTPUT_CONFIG" \
+        "$BACKUP_DIR/matugen-config-$(date +%Y%m%d-%H%M%S).toml"
+
+    TMP_CONFIG="$(mktemp)"
+    cat "$MATUGEN_BASE_CONFIG" "$MATUGEN_EXTRA_CONFIG" >"$TMP_CONFIG"
+    mv "$TMP_CONFIG" "$MATUGEN_OUTPUT_CONFIG"
+
+    echo "Updated Matugen config: $MATUGEN_OUTPUT_CONFIG"
+fi
+
 echo
 echo "Done."
 echo "Backup saved to: $BACKUP_DIR"
