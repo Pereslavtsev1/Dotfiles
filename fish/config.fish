@@ -15,7 +15,9 @@ if status is-interactive
 
     # aliass
     alias q xh
-    alias v "neovide --fork && exit"
+    # alias v "neovide --fork && exit && kitty -e"
+    alias v "nvim "
+    alias cat bat
     alias cls clear
     alias p pnpm
     alias g git
@@ -24,6 +26,7 @@ if status is-interactive
     alias lg lazygit
     alias y yay
     alias gpom 'git push origin main'
+    alias gi "git init"
     alias gr 'go run'
     alias gd 'git diff'
     alias ga 'git add .'
